@@ -1,0 +1,23 @@
+try{
+    throw new console.log(c+d);
+}catch(err)
+{
+    console.log(err);
+}
+console.log("This line constains some error");
+//cosing exercise on the error handling
+function addTwoNums(a,b)
+{
+    try{
+    if(typeof(a)!='number')
+        throw new ReferenceError("the first argument is not a number");
+    if(typeof(b)!='number')
+        throw new ReferenceError("the second argument is not a number");
+    console.log(a+b);
+    }catch(err)
+    {
+        console.log("Error!",err);
+    }
+}
+addTwoNums(5,'5');
+console.log("It still works");
